@@ -34,7 +34,10 @@
         <ul class="navbar-nav nav-flex-icons">
           {% if request.user.is_authenticated %}
           <li class="nav-item">
-            <a href="{% url 'core:order-summary' %}" class="nav-link waves-effect">
+            {% comment %} <a href="{% url 'core:order-summary' %}" class="nav-link waves-effect"> {% endcomment %}
+            <a href="#" class="nav-link waves-effect">
+
+
               <span class="badge red z-depth-1 mr-1"> {{ request.user }} </span>
               {% comment %} cart_item_count {% endcomment %}
               <i class="fas fa-shopping-cart"></i>
